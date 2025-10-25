@@ -1,0 +1,40 @@
+type User @table {
+  email: String!
+  displayName: String!
+  createdAt: Timestamp!
+  photoUrl: String
+  role: String
+}
+
+type Student @table {
+  fullName: String!
+  gender: String!
+  dateOfBirth: Date!
+  placeOfBirth: String!
+  address: Address!
+  previousSchool: String!
+  createdAt: Timestamp!
+  status: String
+  parentName1: String
+  parentName2: String
+  parentPhoneNumber: String
+  parentEmail: String
+}
+
+type Registration @table {
+  submissionDate: Timestamp!
+  student: Student!
+  notes: String
+  reviewedBy: User
+  reviewedAt: Timestamp
+}
+
+type Address @table {
+  student: Student!
+  street: String!
+  city: String!
+  state: String!
+  zipCode: String!
+  country: String!
+  province: String
+}
