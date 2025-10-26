@@ -122,7 +122,7 @@ export function LoginForm({
                 Or continue with
               </FieldSeparator>
 
-              <Field className="grid grid-cols-3 gap-4">
+              <Field>
                 <Button
                   variant="outline"
                   type="button"

@@ -137,7 +137,7 @@ export function RegisterForm({
                 Or continue with
               </FieldSeparator>
 
-              <Field className="grid grid-cols-3 gap-4">
+              <Field>
                 <Button variant="outline" type="button">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path
